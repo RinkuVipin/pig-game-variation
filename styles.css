@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    background-color: white;
+    color: #2f2f2f;
+    font-family: 'Lora', 'Black Ops One', cursive, 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+body {
+    background-image: linear-gradient(rgba(198, 2, 2, 0.98), rgba(212, 60, 148, 0.98));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 120px;
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 0px;
+    box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(rgba(255, 255, 0, 0.6), rgba(229, 255, 0, 0.8));
+}
+
+.new-game {
+    height: 80px;
+    text-align: left;
+}
+
+.new-game a:link,
+.new-game a:visited {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 400;
+    border-radius: 25px;
+    text-decoration: none;
+    color: rgb(213, 0, 0);
+    border: 1px solid rgb(213, 0, 0);
+    transition: color 0.9s, background-color 0.9s;
+}
+
+.new-game a:hover,
+.new-game a:active {
+    color: white;
+    background-color: rgb(187, 0, 0);
+    border: 1px solid rgb(187, 0, 0);
+}
+
+
+
+.player-0-panel {
+    flex: 0 0 40%;
+    padding: 30px;
+    text-align: center;
+}
+
+.player-1-panel {
+    flex: 0 0 40%;
+    padding: 110px 30px 30px 30px;
+    text-align: center;
+}
+
+.player-name {
+    margin: 20px 0px;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgb(213, 0, 0);
+}
+
+.player-score {
+    font-size: 200%;
+    font-weight: 100;
+    color: rgb(213, 0, 0);
+    margin-bottom: 40px;
+}
+
+.player-current {
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #434343;
+    width: 36%;
+}
+
+.player-current div {
+    padding: 4px;
+}
+
+.player-buttons {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgba(212, 60, 148, 0.8), rgba(198, 2, 2, 0.62));
+}
+
+i {
+    /*    color: rgb(213, 0, 0);*/
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    color: #555;
+    background: none;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: font-weight 0.3s, border 0.3s;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    font-weight: 600;
+    border: 1px solid rgb(213, 0, 0);
+}
+
+button:focus {
+    border: 1px solid rgb(213, 0, 0);
+}
+
+.btn-roll {
+    margin: 40px 0px 10px 0px;
+}
+
+.btn-hold {
+    margin: 10px 0px 10px 0px;
+}
+
+.active {
+    background-color: #f7f7f7;
+}
+
+.active .player-name {
+    background-color: rgb(213, 0, 0);
+    color: white;
+}
+
+.img-dice {
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    opacity: 0.98;
+    margin-top: 20px;
+}
+
+.winner-detail {
+    color: rgb(230, 17, 140);
+}
+
+input {
+    width: 80%;
+    padding: 12px 16px;
+    margin: 8px 0px 30px 0px;
+    box-sizing: border-box;
+    border: none;
+}
